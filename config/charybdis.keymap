@@ -72,86 +72,6 @@
             bindings = <&kp PLUS>;
             key-positions = <22 23>;
         };
-
-        F_1 {
-            bindings = <&kp F1>;
-            key-positions = <49 1>;
-        };
-
-        F_2 {
-            bindings = <&kp F2>;
-            key-positions = <49 2>;
-        };
-
-        F_3 {
-            bindings = <&kp F3>;
-            key-positions = <2 49>;
-        };
-
-        F_4 {
-            bindings = <&kp F4>;
-            key-positions = <4 49>;
-        };
-
-        F_5 {
-            bindings = <&kp F5>;
-            key-positions = <5 49>;
-        };
-
-        F_6 {
-            bindings = <&kp F6>;
-            key-positions = <6 49>;
-        };
-
-        F_7 {
-            bindings = <&kp F7>;
-            key-positions = <7 49>;
-        };
-
-        F_8 {
-            bindings = <&kp F8>;
-            key-positions = <8 49>;
-        };
-
-        F_9 {
-            bindings = <&kp F9>;
-            key-positions = <9 49>;
-        };
-
-        F_10 {
-            bindings = <&kp F10>;
-            key-positions = <49 10>;
-        };
-
-        F_11 {
-            bindings = <&kp F11>;
-            key-positions = <23 49>;
-        };
-
-        F_12 {
-            bindings = <&kp F12>;
-            key-positions = <49 35>;
-        };
-
-        R_Arrow {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <43 49>;
-        };
-
-        D_Arrow {
-            bindings = <&kp DOWN>;
-            key-positions = <49 44>;
-        };
-
-        L_Arrow {
-            bindings = <&kp RIGHT>;
-            key-positions = <45 49>;
-        };
-
-        U_Arrow {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <32 49>;
-        };
     };
 
     keymap {
@@ -159,12 +79,12 @@
 
         Base {
             bindings = <
-&kp ESC         &kp N1   &kp N2  &kp N3     &kp N4          &kp N5       &kp N6        &kp N7     &kp N8     &kp N9   &kp N0       &kp BSPC
-&kp TAB         &kp Q    &kp W   &kp E      &kp R           &kp T        &kp Y         &kp U      &kp I      &kp O    &kp P        &kp BACKSLASH
-&kp LEFT_SHIFT  &kp A    &kp S   &kp D      &kp F           &kp G        &kp H         &kp J      &kp K      &kp L    &kp SEMI     &kp APOS
-&kp LCTRL       &lt 1 Z  &kp X   &kp C      &kp V           &kp B        &kp N         &kp M      &kp COMMA  &kp DOT  &lt 2 SLASH  &kp DELETE
-                                 &mkp LCLK  &none           &mkp RCLK    &kp SPACE     &kp ENTER
-                                            &lt 0 LEFT_ALT  &mkp MCLK    &kp LEFT_WIN
+&kp ESC         &kp N1  &kp N2  &kp N3     &kp N4          &kp N5       &kp N6        &kp N7     &kp N8     &kp N9   &kp N0       &kp BSPC
+&kp TAB         &kp Q   &kp W   &kp E      &kp R           &kp T        &kp Y         &kp U      &kp I      &kp O    &kp P        &kp BACKSLASH
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F           &kp G        &kp H         &kp J      &kp K      &kp L    &kp SEMI     &kp APOS
+&kp LCTRL       &kp Z   &kp X   &kp C      &kp V           &kp B        &kp N         &kp M      &kp COMMA  &kp DOT  &lt 2 SLASH  &kp DELETE
+                                &mkp LCLK  &lt 1 SPACE     &mkp RCLK    &kp SPACE     &kp ENTER
+                                           &lt 0 LEFT_ALT  &mkp MCLK    &kp LEFT_WIN
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -176,7 +96,7 @@
 &kp GRAVE         &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT       &kp RBKT   &kp F1         &kp F2        &kp F3                &kp F4                 &kp DEL
 &kp LEFT_CONTROL  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &none          &kp BSLH   &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
 &kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none          &trans     &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
-                                                 &kp LEFT_WIN  &kp SPACE     &trans         &kp ENTER  &kp BACKSPACE
+                                                 &trans        &trans        &trans         &kp ENTER  &kp BACKSPACE
                                                                &none         &none          &trans
             >;
         };
